@@ -57,4 +57,10 @@ html {
   box-sizing: border-box; }
 
 /* End of Reset*/
-/* CSS Document */
+/* 760px (size we want) / 16 (16px = 1em) = 47.5em  For Tablet*/
+/* 1140px (size we want) / 16 (16px = 1em) = 71.25em For Desktop*/
+/*----- Clearfix -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
