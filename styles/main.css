@@ -57,6 +57,9 @@ html {
   box-sizing: border-box; }
 
 /* End of Reset*/
+body {
+  font-family: "Mukta Mahee", sans-serif; }
+
 /* 760px (size we want) / 16 (16px = 1em) = 47.5em  For Tablet*/
 /* 1140px (size we want) / 16 (16px = 1em) = 71.25em For Desktop*/
 /*----- Clearfix -----*/
@@ -65,4 +68,69 @@ html {
   display: table;
   clear: both; }
 
-/* CSS Document */
+.headerWrapper {
+  background-image: url(../images/yogurtBG.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  font-family: "Baloo Bhaijaan", cursive; }
+  .headerWrapper h1 {
+    padding-top: 20px;
+    font-size: 3em;
+    text-align: center;
+    color: #ee4c7c;
+    -webkit-text-shadow: 0px 0px 1px #000;
+    -moz-text-shadow: 0px 0px 1px #000;
+    -ms-text-shadow: 0px 0px 1px #000;
+    text-shadow: 0px 0px 1px #000; }
+  .headerWrapper h2 {
+    font-size: 2em;
+    letter-spacing: .075em;
+    text-align: center;
+    color: #ee4c7c;
+    -webkit-text-shadow: 0px 0px 1px #000;
+    -moz-text-shadow: 0px 0px 1px #000;
+    -ms-text-shadow: 0px 0px 1px #000;
+    text-shadow: 0px 0px 1px #000; }
+
+.nav {
+  width: 100%;
+  background-color: none;
+  margin-top: 20px; }
+  .nav li {
+    padding: .6em;
+    text-align: center; }
+  .nav a {
+    text-decoration: none;
+    font-size: 1.45em;
+    color: #84ceeb;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    -ms-text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000; }
+  .nav .active {
+    background-color: #edc7b7; }
+
+@media screen and (min-width: 480px) {
+  .headerWrapper {
+    height: 300px; }
+    .headerWrapper h1 {
+      padding-top: 30px; }
+
+  .nav {
+    width: 470px;
+    background-color: none;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto; }
+    .nav li {
+      float: left;
+      padding: .5em; }
+      .nav li:hover {
+        background-color: #edc7b7; }
+    .nav a {
+      display: block;
+      font-size: 1.3em; }
+      .nav a:hover {
+        color: #ee4c7c; } }

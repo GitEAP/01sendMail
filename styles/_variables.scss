@@ -1,5 +1,14 @@
+$headFont: 'Baloo Bhaijaan', cursive;
+$bodyFont: 'Mukta Mahee', sans-serif;
 
+$primaryColor: #ee4c7c;
+$secondaryColor: #84ceeb;
+$thirdColor: #edc7b7;
 
+//Global styles
+body {
+	font-family: $bodyFont;
+}
 //Mixin's
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
