@@ -134,3 +134,11 @@ body {
       font-size: 1.3em; }
       .nav a:hover {
         color: #ee4c7c; } }
+footer {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: #FAF1EE; }
+  footer p {
+    font-size: .75em;
+    text-align: center;
+    color: #ee4c7c; }
