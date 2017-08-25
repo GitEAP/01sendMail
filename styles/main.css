@@ -126,14 +126,64 @@ body {
     margin-right: auto; }
     .nav li {
       float: left;
-      padding: .5em; }
+      padding: .5em;
+      transition: background-color .4s linear; }
       .nav li:hover {
         background-color: #edc7b7; }
     .nav a {
       display: block;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      transition: color .4s linear; }
       .nav a:hover {
         color: #ee4c7c; } }
+.ContentPreorder {
+  padding: 0 2%; }
+  .ContentPreorder h1 {
+    font-size: 1.8em;
+    color: #ee4c7c;
+    padding: 20px 0; }
+  .ContentPreorder .preorderForm {
+    padding: 0 4%; }
+    .ContentPreorder .preorderForm fieldset {
+      padding: .5em 0; }
+    .ContentPreorder .preorderForm legend {
+      color: #84ceeb;
+      padding: .25em 0 0 0;
+      font-size: 1.25em; }
+    .ContentPreorder .preorderForm label {
+      margin-left: 1.5em;
+      display: block; }
+    .ContentPreorder .preorderForm span {
+      font-size: .8em; }
+      .ContentPreorder .preorderForm span.formTitle {
+        font-size: 1em;
+        display: block;
+        margin: 1em 0 .5em 1.5em; }
+    .ContentPreorder .preorderForm input.userInput {
+      display: block;
+      margin: .25em .25em 1em 0;
+      width: 75%;
+      padding: .75em; }
+    .ContentPreorder .preorderForm input.submitbutton {
+      display: block;
+      border: #f0d5cc 1px solid;
+      padding: .75em;
+      background-color: #F0D5CC;
+      color: #ee4c7c;
+      font-size: .75em;
+      margin: .75em 0;
+      transition: border-radius .75s ease, background-color .75s ease; }
+      .ContentPreorder .preorderForm input.submitbutton:hover {
+        background: none;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        border-radius: 20px;
+        border: #84ceeb 1px solid; }
+
+@media screen and (min-width: 480px) {
+  .ContentPreorder .preorderForm input.userInput {
+    width: 40%; } }
 footer {
   margin-top: 25px;
   padding: 10px;
