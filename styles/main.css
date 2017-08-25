@@ -136,6 +136,26 @@ body {
       transition: color .4s linear; }
       .nav a:hover {
         color: #ee4c7c; } }
+footer {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: #FAF1EE; }
+  footer p {
+    font-size: .75em;
+    text-align: center;
+    color: #ee4c7c; }
+
+.default {
+  padding: 0 2%;
+  min-height: 350px; }
+  .default h1 {
+    font-size: 1.8em;
+    color: #ee4c7c;
+    padding: 20px 0; }
+  .default p {
+    font-size: 1em;
+    padding: 1.4em 0; }
+
 .ContentPreorder {
   padding: 0 2%; }
   .ContentPreorder h1 {
@@ -184,11 +204,3 @@ body {
 @media screen and (min-width: 480px) {
   .ContentPreorder .preorderForm input.userInput {
     width: 40%; } }
-footer {
-  margin-top: 25px;
-  padding: 10px;
-  background-color: #FAF1EE; }
-  footer p {
-    font-size: .75em;
-    text-align: center;
-    color: #ee4c7c; }
