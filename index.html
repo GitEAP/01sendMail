@@ -36,13 +36,13 @@
 <main class="ContentPreorder">
 	<h1>Pre-order now and save time at the checkout</h1>
 	
-	<form action="" method="GET" enctype="multipart/form-data" class="preorderForm">
+	<form action="receiveOrder.php" method="POST" enctype="multipart/form-data" class="preorderForm">
 	
 		<fieldset>
 			<legend>Personal Information</legend>
-			<label><span>Name:</span><input name="name" type="text" placeholder="Your Name..." pattern="[a-zA-Z -.]{3,999}" required class="userInput"></label>
+			<label><span>Name:</span><input name="name" type="text" placeholder="Your Name..." pattern="[a-zA-Z -.]{3,999}"  class="userInput"></label>
 			<label><span>Phone:</span><input name="phone" type="tel" placeholder="555-333-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="userInput"></label>
-			<label><span>Email:</span><input name="email" type="email" placeholder="yourname@myemail.com" required class="userInput"></label>
+			<label><span>Email:</span><input name="email" type="email" placeholder="yourname@myemail.com"  class="userInput"></label>
 		</fieldset>
 
 		<fieldset>
@@ -63,15 +63,17 @@
 		
 		<fieldset>
 			<legend>Other options</legend>
-			<span class="formTitle">Order Now?</span>
-					<label><input value="notNow" type="radio" name="orderNow" class="formButtons">No</label>
-					<label><input value="rightNow" type="radio" name="orderNow" class="formButtons">Yes</label>
+			<span class="formTitle">Order Now or Later?</span>
+					<label><input value="Later" type="radio" name="orderNow" class="formButtons">Later</label>
+					<label><input value="Now" type="radio" name="orderNow" class="formButtons">Now</label>
 			<span class="formTitle">Pay Now or Later?</span>
-					<label><input value="payNow" type="radio" name="payment" class="formButtons">Now</label>
-					<label><input value="payLater" type="radio" name="payment" class="formButtons">Later</label>
+					<label><input value="pay Later" type="radio" name="payment" class="formButtons">Later</label>
+					<label><input value="pay Now" type="radio" name="payment" class="formButtons">Now</label>
+					
 		</fieldset>
 	
-	<input class="submitbutton" name="submitbutton" value="Place Pre-order" type="submit">
+	<input class="submitbutton" name="submitbutton" value="Place Order" type="submit">
+	<input type="hidden" value="thanks.html" name="redirect">
 	</form>
 </main>
 
